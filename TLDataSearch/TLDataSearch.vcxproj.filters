@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Ctrl">
+      <UniqueIdentifier>{85f53731-5c5a-420e-98b5-45f9d2a12881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{70a28703-145c-47cc-9626-8bb635ef09c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Task">
+      <UniqueIdentifier>{e5fc71ca-d069-4a02-9064-31d73234397c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Conf">
+      <UniqueIdentifier>{cb8b5f4d-c9b4-4edd-9d53-f4abaf02fcac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{fccc3db4-29cb-4251-a2ef-11dcf21dc876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{9e6cbe8b-d3d3-4a7c-8dfb-d084453819a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Msg">
+      <UniqueIdentifier>{43396e25-b359-4d1c-8d0d-099a36daeee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{b7804e77-5b6a-424e-a696-ffde87e1b550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{09288749-9388-42ee-8b30-dc76941e8608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search">
+      <UniqueIdentifier>{ee5670bb-0081-42d7-9453-56919291ca20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="TLDataSearch.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TLDataSearch.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Ctrl\MainWindow.cpp">
+      <Filter>Ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\SystemEven.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TLTaskThread.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\TLUuid.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Conf\TLConfiguration.cpp">
+      <Filter>Conf</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TLCheckNewVersionTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TLCheckVersionRequest.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\TLVersion.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\unzip.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\zip.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin\TLPluginManager.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TLLoadPluginTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrl\TLPopMessageWnd.cpp">
+      <Filter>Ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrl\TLToastMessageWnd.cpp">
+      <Filter>Ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TLCheckIndexServiceStatusTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TLLoadRecentFilesTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\TLNetworkImageResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Ctrl\TLPageContrl.cpp">
+      <Filter>Ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Search\TLLocalSearcher.cpp">
+      <Filter>Search</Filter>
+    </ClCompile>
+    <ClCompile Include="Task\TLLoadAppConfigTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Ctrl\MainWindow.h">
+      <Filter>Ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\SystemEven.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Task\TLTaskThread.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\TLTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Conf\TLConfiguration.h">
+      <Filter>Conf</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\TLUuid.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\TLConfigItem.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\picojson.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\TLCheckNewVersionTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TLCheckVersionRequest.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\TLVersion.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Msg\TLUIMsg.h">
+      <Filter>Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\unzip.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\zip.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\TLPdfItem.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin\TLPlugin.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin\TLPluginManager.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\TLLoadPluginTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrl\TLPopMessageWnd.h">
+      <Filter>Ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrl\TLToastMessageWnd.h">
+      <Filter>Ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\TLCheckIndexServiceStatusTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\TLLoadRecentFilesTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\TLFileItem.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\TLNetworkImageResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Ctrl\TLPageContrl.h">
+      <Filter>Ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="Search\TLLocalSearcher.h">
+      <Filter>Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Search\TLLocalSearcherException.h">
+      <Filter>Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Task\TLLoadAppConfigTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

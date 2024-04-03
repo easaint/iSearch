@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Export">
+      <UniqueIdentifier>{b895a1bf-bc55-4635-afd2-abba4dc0ff3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{e89d111e-d7a1-48f6-9e0f-213710fb5180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{effcaef6-0b2a-4dfc-83d6-5fff6be32369}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Export\TLAnyDocReader.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Export\TLDocReaderBase.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Impl\TLAnyDocReader.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

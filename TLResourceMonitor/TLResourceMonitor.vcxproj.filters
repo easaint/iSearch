@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{32f69a0d-f2a3-4ca5-abde-8f3050517200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{b8c0bb05-0553-4177-8567-dec5ad703465}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TLResMonitorContext.cpp" />
+    <ClCompile Include="TLWindowsService.cpp" />
+    <ClCompile Include="TLFullDiskScan.cpp" />
+    <ClCompile Include="TLResPath.cpp" />
+    <ClCompile Include="TLIndexCreator.cpp" />
+    <ClCompile Include="TLCatalogChangeMonitor.cpp" />
+    <ClCompile Include="TLCatalogMonitorService.cpp" />
+    <ClCompile Include="Util\unzip.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\zip.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TLResMonitorContext.h" />
+    <ClInclude Include="TLWindowsService.h" />
+    <ClInclude Include="TLFullDiskScan.h" />
+    <ClInclude Include="TLResMonitorBase.h" />
+    <ClInclude Include="TLResPath.h" />
+    <ClInclude Include="TLIndexCreator.h" />
+    <ClInclude Include="TLCatalogChangeMonitor.h" />
+    <ClInclude Include="Model\TLIndexResOperatorModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TLCatalogMonitorService.h" />
+    <ClInclude Include="Util\unzip.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\zip.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
