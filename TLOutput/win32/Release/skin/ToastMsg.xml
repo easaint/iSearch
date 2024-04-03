@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,40" size="200,35" showshadow="true" shadowimage="main/shadow.png" shadowsize="6" shadowcorner="8,8,8,8">
+  <Font id="0" name="微软雅黑" size="12" default="true"/>
+  <Font id="1" name="微软雅黑" size="14"/>
+
+  <HorizontalLayout bkcolor="#FF00BFFF">
+    <Label textpadding="15,0,0,0" autocalcwidth="true" name="MessageText" textcolor="#FFFFFFFF" font="1" align="left" valign="vcenter"/>
+	<Control />
+	<Button padding ="0,3,0,0" cursor="hand" name="closeBtn" width="30" height="30" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" bkimage="sysbtn/close_toast_wnd.png" />
+  </HorizontalLayout>
+</Window>

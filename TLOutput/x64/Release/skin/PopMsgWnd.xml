@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,40" size="400,195" roundcorner="5,5" showshadow="true" shadowsize="3" shadowcorner="8,8,8,8">
+  <Font id="0" name="微软雅黑" size="12" default="true"/>
+  <Font id="1" name="微软雅黑" size="14"/>
+
+  <VerticalLayout bkcolor="#FFFFFFFF">
+    <HorizontalLayout name="appbar" height="36" inset="6,-1" bkcolor="#FFEEEEEE">
+      <Label name="MessageTitle" valign="vcenter" text="提示" textcolor="#FF000000" font="1" />
+      <Button name="closebtn" width="39" height="20" tooltip="关闭" normalimage="file='sysbtn/btn_close_normal.png'" hotimage="file='sysbtn/btn_close_highlight.png'" pushedimage="file='sysbtn/btn_close_down.png'"/>
+    </HorizontalLayout>
+    <VerticalLayout inset="20,10,20,10">
+      <Label name="MessageText" textcolor="#FF000000" font="1" align="left" valign="vcenter"/>
+    </VerticalLayout>
+    <HorizontalLayout height="60" inset="10,10,10,10">
+      <Control />
+      <Button name="confirm_btn" text="确认" height="29" width="60" colorhsl1="true" textcolor="#FFFFFFFF" bkcolor="#FF1E90EF" hotbkcolor="#AA1E90FF" pushedbkcolor="#EE4169E1"/>
+      <Control width="20"/>
+      <Button name="cancel_btn" text="取消" height="29" width="60" colorhsl1="true" textcolor="#FFFFFFFF" bkcolor="#FF1E90EF" hotbkcolor="#AA1E90FF" pushedbkcolor="#EE4169E1" />
+      <Control width="30"/>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

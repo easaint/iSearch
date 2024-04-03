@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1200,720" sizebox="4,4,6,6" roundcorner="5,5" caption="0,0,0,64" mininfo="1200,720" textrenderinghint="0" showshadow="true" shadowsize="3" shadowcorner="8,8,8,8">
+  <Font shared="true" id="0" name="宋体" size="11" />
+  <Font shared="true" id="1" name="宋体" size="12" />
+  <Font shared="true" id="2" name="宋体" size="13" bold="false" underline="false"/>
+  <Font shared="true" id="3" name="宋体" size="14" default="true" bold="false"/>
+  <Font shared="true" id="4" name="宋体" size="15" bold="false"/>
+  <Font shared="true" id="5" name="宋体" size="16" bold="false"/>
+  <Font shared="true" id="6" name="宋体" size="17" bold="false"/>
+  <Font shared="true" id="7" name="宋体" size="18" bold="false"/>
+  
+  <Style name="combo_search_type_style" value="height=&quot;30&quot; textcolor=&quot;#FF4B4F51&quot; itemvalign=&quot;vcenter&quot; textpadding=&quot;20,1,2,2&quot; normalimage=&quot;res='common/combo1.png' source='0,0,100,22' corner='1,1,21,1'&quot; hotimage=&quot;res='common/combo1.png' source='0,22,100,44' corner='1,1,21,1'&quot; pushedimage=&quot;res='common/combo1.png' source='0,44,100,66' corner='1,1,21,1'&quot;" />
+  <Style name="edit_keyword_style" value="width=&quot;400&quot; height=&quot;30&quot; textpadding=&quot;6,6,6,6&quot; bkcolor=&quot;#FFFFFFFF&quot; nativebkcolor=&quot;#FF666666&quot; bkimage=&quot;res='common/edit_bk.png' corner='6,6,6,6'&quot;" />
+  <Style name="ctl_word_icon" value="drag=&quot;false&quot; height=&quot;30&quot; width=&quot;30&quot; bkimage=&quot;res='common/word.png'&quot;" />
+  <Style name="ctl_txt_icon" value="drag=&quot;false&quot; height=&quot;30&quot; width=&quot;30&quot; bkimage=&quot;res='common/txt.png'&quot;" />
+  <Style name="ctl_pdf_icon" value="drag=&quot;false&quot; height=&quot;30&quot; width=&quot;30&quot; bkimage=&quot;res='common/pdf.png'&quot;" />
+  <Style name="ctl_thumbnail_pdf_icon" value="drag=&quot;false&quot; height=&quot;100&quot; width=&quot;65&quot; bkimage=&quot;res='common/testPdf.png'&quot;" />
+  <Style name="ctl_plugin_doc_exchange_icon" value="drag=&quot;false&quot; height=&quot;30&quot; width=&quot;30&quot; bkimage=&quot;res='common/docExchange.png'&quot;" />
+  
+  <Default name="VScrollBar" value="button1normalimage=&quot;file='common/scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='common/scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='common/scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='common/scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='common/scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='common/scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='common/scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='common/scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='common/scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='common/scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='common/scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='common/scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='common/scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='common/scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='common/scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='common/scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='common/scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='common/scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='common/scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='common/scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+  
+  <HorizontalLayout>
+	<!--右侧主体区域-->
+	<VerticalLayout name="mainLayout" bkcolor="#FFFFFFFF" bordercolor="#FF768D9B" bordersize="0" inset="1,0,1,0" >
+		<!--头部区域-->
+		<HorizontalLayout name="appbar" height="60">
+			<!--系统按钮-->
+			<HorizontalLayout inset="0,-1,0,0" float="true" height="30" width="95" floatalign="right,top" bordercolor="#FFFF0000" bordersize="0">
+				<FadeButton name="minbtn" virtualwnd="mainpage" width="28" height="20" tooltip="最小化" normalimage="file='sysbtn/btn_mini_normal.png'" hotimage="file='sysbtn/btn_mini_highlight.png'" pushedimage="file='sysbtn/btn_mini_down.png' "/>
+				<FadeButton name="maxbtn" virtualwnd="mainpage" width="28" height="20" tooltip="最大化" normalimage="file='sysbtn/btn_max_normal.png'" hotimage="file='sysbtn/btn_max_highlight.png'" pushedimage="file='sysbtn/btn_max_down.png' "/>
+				<FadeButton name="restorebtn" virtualwnd="mainpage" width="28" height="20" tooltip="还原" visible="false" normalimage="file='sysbtn/btn_restore_normal.png'" hotimage="file='sysbtn/btn_restore_highlight.png'" pushedimage="file='sysbtn/btn_restore_down.png' "/>
+				<FadeButton name="closebtn" virtualwnd="mainpage" width="39" height="20" tooltip="关闭" normalimage="file='sysbtn/btn_close_normal.png'" hotimage="file='sysbtn/btn_close_highlight.png'" pushedimage="file='sysbtn/btn_close_down.png' "/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+	
+		<!--查询控件区域-->
+		<HorizontalLayout height="30" childpadding="-2">
+			<Control />
+			<Edit padding="0,0,0,0" pos="0,0,0,0" name="keywordInputEdit" tipvalue="请输入检索内容，多个关键字用+，如：中国+安康" style="edit_keyword_style" nativebkcolor="#FFFFFFFF" />
+			<Button name="searchBtn" text="检索" font="3" height="29" width="60" colorhsl1="true" textcolor="#FFFFFFFF" bkcolor="#FF4E6EF2" hotbkcolor="#AA1E90FF" pushedbkcolor="#EE4169E1" />
+			<Control />
+		</HorizontalLayout>
+	
+		<!--最近编辑文档显示区域-->
+		<VerticalLayout name="recentEditDocMainLayout" padding="0,10,0,0" height="500" visible="true">
+			<Label padding="100,0,0,2" text="最近编辑的文档" resourcetext="true" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" textcolor="#FF1E90FF" font="1" />
+			<Label height="1" bkimage="common/hor_line.png" />
+			<VerticalLayout name="recentEditDocListLayout">
+				<!--
+				<HorizontalLayout height="40">
+					<Control padding="100,10,10,0" style="ctl_word_icon" />
+					<Button padding="0,12,0,0" cursor="hand" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" text="迁移SQL.docx" textcolor="#FF0000EE" hottextcolor="#FFDC143C" font="1" docPath="C:\\121" />
+					<Label padding="30,12,0,0" text="修改时间：2023-11-23 09:22:23" valign="vcenter" align="left" textcolor="#FFAAAAAA" font="1" />
+					<Control/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<Control padding="100,10,10,0" style="ctl_word_icon" />
+					<Button padding="0,12,0,0" cursor="hand" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" text="java开发规范.docx" textcolor="#FF0000EE" hottextcolor="#FFDC143C" font="1" docPath="C:\\121" />
+					<Label padding="30,12,0,0" text="修改时间：2023-11-23 09:22:23" valign="vcenter" align="left" textcolor="#FFAAAAAA" font="1" />
+					<Control/>
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<Control padding="100,10,10,0" style="ctl_txt_icon" />
+					<Button padding="0,12,0,0" cursor="hand" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" text="每天日志.log" textcolor="#FF0000EE" hottextcolor="#FFDC143C" font="1" docPath="C:\\121" />
+					<Label padding="30,12,0,0" text="修改时间：2023-11-23 09:22:23" valign="vcenter" align="left" textcolor="#FFAAAAAA" font="1" />
+					<Control/>
+				</HorizontalLayout>
+				-->
+			</VerticalLayout>
+		</VerticalLayout>
+	
+		<!--本地检索结果列表区域-->
+		<VerticalLayout name="localSearchMainLayout" height="500" visible="false">
+			<Label name="localDocResultLabel" padding="100,0,0,2" text="<f 4><c #1E90FF>结果列表:</c></f><f 1><c #999999>共0条结果</c></f>" resourcetext="true" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" font="1" />
+			<Label height="1" bkimage="common/hor_line.png" />
+			<VerticalLayout name="localSearchListLayout">
+				<!--
+				<VerticalLayout height="100">
+					<HorizontalLayout height="40">
+						<Control padding="100,10,10,0" style="ctl_pdf_icon" />
+						<Button padding="0,12,0,0" cursor="hand"  showhtml="true" autocalcwidth="true" valign="vcenter" align="left" text="think in java（第五版）.pdf" textcolor="#FF0000EE" hottextcolor="#FFDC143C" font="1" />
+						<Label padding="30,12,0,0" text="修改时间：2023-11-23 09:22:23" valign="vcenter" align="left" textcolor="#FFAAAAAA" font="0" />
+						<Control/>
+					</HorizontalLayout>
+					<HorizontalLayout height="60">
+						<Label padding="100,0,100,0" text="    <f 4><c #DC143C>Java</c></f> <f 1>是一门派生语言，早期语言设计者为了不想在项目中使用 C++ 而创造了这种看起来很像 C++，却比 C++ 有了改进的新语言（原始的项目并未成功）。</f><f 4><c #DC143C>Java </c></f> <f 1>最核心的变化就是加入了 “虚拟机” 和 “垃圾回收机制”，这两个概念在之后的章节会有详细描述。此外，Java 还在其他方面推动了行业发展。例如，现在绝大多数编程语言都支持文档注释语法和 HTML 文档生成工具。</f>" resourcetext="true" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" wordbreak="true" textcolor="#FF000000" font="1" />
+					</HorizontalLayout>
+				</VerticalLayout>
+				<VerticalLayout height="100">
+					<HorizontalLayout height="40">
+						<Control padding="100,10,10,0" style="ctl_word_icon" />
+						<Button padding="0,12,0,0" cursor="hand"  showhtml="true" autocalcwidth="true" valign="vcenter" align="left" text="java 开发规范.docx" textcolor="#FF0000EE" hottextcolor="#FFDC143C" font="1" />
+						<Label padding="30,12,0,0" text="修改时间：2023-11-23 09:22:23" valign="vcenter" align="left" textcolor="#FFAAAAAA" font="0" />
+						<Control/>
+					</HorizontalLayout>
+					<HorizontalLayout height="60">
+						<Label padding="100,0,100,0" text="    <f 4><c #DC143C>Java</c></f> <f 1>是一门派生语言，早期语言设计者为了不想在项目中使用 C++ 而创造了这种看起来很像 C++，却比 C++ 有了改进的新语言（原始的项目并未成功）。</f><f 4><c #DC143C>Java </c></f> <f 1>最核心的变化就是加入了 “虚拟机” 和 “垃圾回收机制”，这两个概念在之后的章节会有详细描述。此外，Java 还在其他方面推动了行业发展。例如，现在绝大多数编程语言都支持文档注释语法和 HTML 文档生成工具。</f>" resourcetext="true" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" wordbreak="true" textcolor="#FF000000" font="1" />
+					</HorizontalLayout>
+				</VerticalLayout>
+				<VerticalLayout height="100">
+					<HorizontalLayout height="40">
+						<Control padding="100,10,10,0" style="ctl_txt_icon" />
+						<Button padding="0,12,0,0" cursor="hand"  showhtml="true" autocalcwidth="true" valign="vcenter" align="left" text="java笔记.pdf" textcolor="#FF0000EE" hottextcolor="#FFDC143C" font="1" />
+						<Label padding="30,12,0,0" text="修改时间：2023-11-23 09:22:23" valign="vcenter" align="left" textcolor="#FFAAAAAA" font="0" />
+						<Control/>
+					</HorizontalLayout>
+					<HorizontalLayout height="60">
+						<Label padding="100,0,100,0" text="    <f 4><c #DC143C>Java</c></f> <f 1>是一门派生语言，早期语言设计者为了不想在项目中使用 C++ 而创造了这种看起来很像 C++，却比 C++ 有了改进的新语言（原始的项目并未成功）。</f><f 4><c #DC143C>Java </c></f> <f 1>最核心的变化就是加入了 “虚拟机” 和 “垃圾回收机制”，这两个概念在之后的章节会有详细描述。此外，Java 还在其他方面推动了行业发展。例如，现在绝大多数编程语言都支持文档注释语法和 HTML 文档生成工具。</f>" resourcetext="true" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" wordbreak="true" textcolor="#FF000000" font="1" />
+					</HorizontalLayout>
+				</VerticalLayout>
+				-->
+			</VerticalLayout>
+		</VerticalLayout>
+	
+		<Control/>
+		<!--分页显示区域-->
+		<HorizontalLayout name="pageInfoLayout" visible="true">
+		</HorizontalLayout>
+		<!--底部公司信息展示，以及新版本信息-->
+		<HorizontalLayout>
+			<Control/>
+			<Button name="companyInfoBtn" padding="0,12,5,0" showhtml="true" autocalcwidth="true" valign="vcenter" align="left" text="弈圣科技" textcolor="#FFD7D7D7" hottextcolor="#FF1E90FF" font="1" />
+		</HorizontalLayout>
+	</VerticalLayout>
+  </HorizontalLayout>
+  
+</Window>
