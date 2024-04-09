@@ -2,17 +2,32 @@
 本项目为打造PC端全文检索引擎，兼容XP系统，使用vs2013及其以上版本进行编译
 
 ### 1.1项目模块说明
- > TLSearchEngine ：全文检索引擎库项目
-
- > TLSeachEngineTest ：全文检索引擎库测试项目，使用MFC编写
-
  > TLCommon ：公共库项目，其他库可以引用
 
-## 2.编译
-### 2.1安装zlib库
-因为项目使用了zlib库压缩，所以需要安装zlib库，下载地址：
-[zlib库.zip](https://doc.tianlent.com:8443/media/attachment/2023/08/01%E5%8E%9F%E5%A7%8B%E5%BC%80%E5%8F%91%E5%8C%85%E4%BB%A5%E5%8F%8Avs%E7%BC%96%E8%AF%91%E8%AF%B4%E6%98%8E%E6%95%99%E7%A8%8B.zip)
+ > TLDataSearch ：UI项目
+ 
+ > TLDocReader ： 文档读取项目
 
-### 2.2编译代码
-首先克隆项目:
-然后使用vs2013即可编译成功
+ > TLNetwork ： 网络库，用于版本检测
+
+ > TLResourceMonitor ： 资源监控项目
+
+## 2.编译
+编译项目之前先安装vs2013及其以上版本
+
+### 2.1编译代码
+`git clone git@github.com:easaint/iSearch.git`
+
+然后依次编译 TLCommon项目、TLNetwork、TLDocReader、TLResourceMonitor、TLDataSearch
+
+编译完成之后，运行TLDataSearch项目，如图：
+
+![软件](images/ui.png)
+
+进行搜收关键字：
+
+![软件](images/search1.png)
+
+多关键字搜收：
+
+![软件](images/search2.png)
