@@ -20,7 +20,7 @@
 
 然后依次编译 TLCommon项目、TLNetwork、TLDocReader、TLResourceMonitor、TLDataSearch
 
-编译完成之后，运行TLDataSearch项目，如图：
+编译完成之后，将TLOutput目录下的对应环境的库拷贝到编译输出目录，然后运行TLDataSearch项目，如图：
 
 ![软件](images/ui.png)
 
