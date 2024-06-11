@@ -11,6 +11,10 @@
  > TLNetwork ： 网络库，用于版本检测
 
  > TLResourceMonitor ： 资源监控项目
+ 
+### 1.2项目版权
+
+![版权](images/copyright.png)
 
 ## 2.编译
 编译项目之前先安装vs2013及其以上版本
